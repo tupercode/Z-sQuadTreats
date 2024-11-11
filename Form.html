@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Form</title>
+    <link rel="stylesheet" href="Order.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2 class="form-title">Place Your Order</h2>
+
+        <form action="https://formspree.io/f/xjkvrgjr" method="POST" class="order-form">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your full name">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email address">
+            </div>
+
+            <div class="form-group">
+                <label for="Cake Idea">Cake Design</label>
+                <textarea id="CakeIdea" name="CakeIdea" rows="4" required placeholder="Cake design / Motif, Size and Tier"></textarea>
+            </div>
+
+
+
+            <div class="form-group">
+                <label for="address">Shipping Address</label>
+                <textarea id="address" name="address" rows="4" required placeholder="Enter your shipping address"></textarea>
+            </div>
+
+
+    
+
+        
+
+            <div class="form-group">
+                <input type="submit" value="Place Order" class="submit-btn">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
