@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -11,15 +10,16 @@
     --color3: #F6D1B0;
 }
 
-
+/* Body styles */
 body {
     font-family: cursive;
     line-height: 1.6;
     background: linear-gradient(to top, var(--color2), var(--color3), var(--color1));
     color: #522c2c;
+    padding: 0 10px; 
 }
 
-
+/* Header and navigation styles */
 header {
     background: linear-gradient(to top, var(--color2), var(--color3), var(--color1));
     padding: 1rem 0;
@@ -29,11 +29,11 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
 }
 
 .logo img {
-    width: 80px;
+    width: 100px; 
     height: auto;
     border-radius: 20px;
     padding: 10px;
@@ -43,23 +43,26 @@ header {
     flex-grow: 1;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
+}
 
 header nav ul {
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+}
 
 header nav ul li {
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
 header nav ul li a {
     text-decoration: none;
     color: #272626;
     font-weight: bold;
-    font-size: 1rem;
-    padding: 8px 10px;
+    font-size: 1.2rem;
+    padding: 10px 15px;
     display: block;
     border-radius: 15px;
     transition: background-color 0.3s;
@@ -74,31 +77,31 @@ nav ul li a:hover {
 /* Hero section */
 .hero {
     width: 100%;
-    height: 60vh;
+    height: 50vh;
     background-image: url(cnt.jpeg.jpg);
     background-size: cover;
     background-position: center;
     text-align: center;
-    padding: 50px 20px;
+    padding: 100px 20px;
     color: #522c2c;
 }
 
 .hero h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin-bottom: 20px;
 }
 
 .hero p {
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-bottom: 20px;
 }
 
 .cta-button {
     background-color: #F6D1B0;
     color: #272626;
-    padding: 10px 20px;
+    padding: 15px 30px;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.2rem;
     border-radius: 30px;
     transition: background-color 0.3s;
 }
@@ -110,35 +113,35 @@ nav ul li a:hover {
 /* Pastries section */
 .pastries {
     text-align: center;
-    padding: 40px 20px;
+    padding: 50px 20px;
 }
 
 .pastries h2 {
-    font-size: 1.8rem;
+    font-size: 2rem;
     margin-bottom: 20px;
 }
 
 .pastry-item {
     display: inline-block;
-    width: 45%; 
-    margin: 15px;
+    width: 30%;
+    margin: 20px;
     text-align: center;
 }
 
 .pastry-item img {
-    width: 80%; 
+    width: 70%;
     height: auto;
     border-radius: 8px;
     transition: transform 0.3s ease-in-out;
 }
 
 .pastry-item h3 {
-    font-size: 1.3rem;
-    margin-top: 10px;
+    font-size: 1.5rem;
+    margin-top: 15px;
 }
 
 .pastry-item p {
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: #666;
 }
 
@@ -147,20 +150,20 @@ nav ul li a:hover {
     cursor: pointer;
 }
 
-/* Order Section */
+
 .order-section {
     background-color: #f0e1d6;
     text-align: center;
-    padding: 40px 20px;
+    padding: 50px 20px;
 }
 
 .order-section h2 {
-    font-size: 1.8rem;
+    font-size: 2rem;
     margin-bottom: 20px;
 }
 
 .order-section p {
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-bottom: 20px;
 }
 
@@ -173,14 +176,20 @@ footer {
     font-size: 0.9rem;
 }
 
-@media (max-width: 768px) {
-    header nav ul {
-        flex-direction: column;
-        align-items: center;
+
+@media (max-width: 1024px) {
+    .hero h1 {
+        font-size: 2.5rem;
     }
 
-    .hero {
-        height: 50vh;
+    .pastry-item {
+        width: 45%; 
+    }
+}
+
+@media (max-width: 768px) {
+    .HContainer {
+        flex-direction: column;
     }
 
     .hero h1 {
@@ -188,43 +197,30 @@ footer {
     }
 
     .hero p {
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
 
     .pastry-item {
-        width: 100%;
+        width: 90%; 
     }
 
-    .pastry-item img {
-        width: 90%;
+    header nav ul li {
+        margin: 0 10px;
     }
 
-    .cta-button {
+    header nav ul li a {
         font-size: 1rem;
-        padding: 10px 20px;
     }
 }
 
 @media (max-width: 480px) {
-    header nav ul li a {
-        font-size: 0.9rem;
-        padding: 5px 8px;
-    }
-
-    .hero h1 {
-        font-size: 1.8rem;
-    }
-
-    .hero p {
-        font-size: 0.8rem;
-    }
-
     .cta-button {
-        font-size: 0.9rem;
-        padding: 8px 15px;
+        padding: 10px 20px; 
+        font-size: 1rem;
     }
 
-    .pastry-item img {
-        width: 100%;
+    .hero {
+        padding: 50px 10px;
+        height: 40vh;
     }
 }
