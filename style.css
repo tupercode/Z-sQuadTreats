@@ -16,7 +16,8 @@ body {
     line-height: 1.6;
     background: linear-gradient(to top, var(--color2), var(--color3), var(--color1));
     color: #522c2c;
-    padding: 0 10px; 
+    padding: 0;
+    margin: 0;
 }
 
 /* Header and navigation styles */
@@ -27,29 +28,30 @@ header {
 
 .HContainer {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap; 
+    align-items: center;
+    flex-wrap: wrap; /* Make sure this can wrap in smaller viewports */
 }
 
 .logo img {
-    width: 100px;
+    width: 100px; /* Adjust size as needed */
     height: auto;
     border-radius: 20px;
     padding: 10px;
 }
 
 .navbar {
-    flex-grow: 1;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; 
+    flex-grow: 1;
+    flex-wrap: wrap; /* Ensures the navigation will wrap on smaller screens */
+    margin-left: 20px;
 }
 
 header nav ul {
     list-style-type: none;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Ensure this is responsive */
     justify-content: center;
 }
 
@@ -234,6 +236,7 @@ nav ul li a:hover {
    
 }
 
+/* Responsive Design for Guides */
 @media (max-width: 768px) {
     .guide-items {
         flex-direction: column;
@@ -243,22 +246,6 @@ nav ul li a:hover {
     .guide-item {
         width: 80%;
     }
-}
-/* Order Section */
-.order-section {
-    background-color: #f0e1d6;
-    text-align: center;
-    padding: 50px 20px;
-}
-
-.order-section h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-.order-section p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
 }
 
 /* Footer */
@@ -277,13 +264,14 @@ footer {
     }
 
     .pastry-item {
-        width: 45%; 
+        width: 45%; /* Two items per row on tablets */
     }
 }
 
 @media (max-width: 768px) {
     .HContainer {
-        flex-direction: column; 
+        flex-direction: column;
+        align-items: flex-start; /* Stack and align items */
     }
 
     .hero h1 {
@@ -294,12 +282,21 @@ footer {
         font-size: 1rem;
     }
 
+    .cta-button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
     .pastry-item {
-        width: 90%; 
+        width: 90%; /* Single item per row on small devices */
+    }
+
+    header nav ul {
+        justify-content: space-between; /* Adjust for smaller navigation */
     }
 
     header nav ul li {
-        margin: 0 10px;
+        margin: 5px 10px;
     }
 
     header nav ul li a {
@@ -308,13 +305,13 @@ footer {
 }
 
 @media (max-width: 480px) {
-    .cta-button {
-        padding: 10px 20px; 
-        font-size: 1rem;
-    }
-
     .hero {
         padding: 50px 10px;
-        height: 40vh; 
+        height: 40vh; /* Adjust hero height */
+    }
+
+    .cta-button {
+        font-size: 1rem;
+        padding: 10px 20px;
     }
 }
