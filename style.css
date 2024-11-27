@@ -1,4 +1,4 @@
-/* Reset default margin and padding */
+
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +11,7 @@
     --color3: #F6D1B0;
 }
 
-/* Body styles */
+
 body {
     font-family: cursive;
     line-height: 1.6;
@@ -19,7 +19,7 @@ body {
     color: #522c2c;
 }
 
-/* Header and navigation styles */
+
 header {
     background: linear-gradient(to top, var(--color2), var(--color3), var(--color1));
     padding: 1rem 0;
@@ -29,7 +29,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap; /* Ensures elements wrap on smaller screens */
+    flex-wrap: wrap;
 }
 
 .logo img {
@@ -43,14 +43,12 @@ header {
     flex-grow: 1;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; /* Wraps navigation items on smaller screens */
-}
+    flex-wrap: wrap; 
 
 header nav ul {
     list-style-type: none;
     display: flex;
-    flex-wrap: wrap; /* Ensures nav items wrap on smaller screens */
-}
+    flex-wrap: wrap;
 
 header nav ul li {
     margin: 0 10px;
@@ -122,13 +120,13 @@ nav ul li a:hover {
 
 .pastry-item {
     display: inline-block;
-    width: 45%; /* Adjusted for responsiveness */
+    width: 45%; 
     margin: 15px;
     text-align: center;
 }
 
 .pastry-item img {
-    width: 80%; /* Adjusted for responsiveness */
+    width: 80%; 
     height: auto;
     border-radius: 8px;
     transition: transform 0.3s ease-in-out;
@@ -175,7 +173,6 @@ footer {
     font-size: 0.9rem;
 }
 
-/* Responsive Styles */
 @media (max-width: 768px) {
     header nav ul {
         flex-direction: column;
