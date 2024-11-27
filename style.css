@@ -33,7 +33,7 @@ header {
 }
 
 .logo img {
-    width: 100px; 
+    width: 100px;
     height: auto;
     border-radius: 20px;
     padding: 10px;
@@ -43,7 +43,7 @@ header {
     flex-grow: 1;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
 }
 
 header nav ul {
@@ -150,7 +150,7 @@ nav ul li a:hover {
     cursor: pointer;
 }
 
-
+/* Order Section */
 .order-section {
     background-color: #f0e1d6;
     text-align: center;
@@ -176,7 +176,7 @@ footer {
     font-size: 0.9rem;
 }
 
-
+/* Responsive Design */
 @media (max-width: 1024px) {
     .hero h1 {
         font-size: 2.5rem;
@@ -189,7 +189,7 @@ footer {
 
 @media (max-width: 768px) {
     .HContainer {
-        flex-direction: column;
+        flex-direction: column; 
     }
 
     .hero h1 {
@@ -221,6 +221,6 @@ footer {
 
     .hero {
         padding: 50px 10px;
-        height: 40vh;
+        height: 40vh; 
     }
 }
