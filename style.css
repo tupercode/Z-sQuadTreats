@@ -123,15 +123,17 @@ nav ul li a:hover {
 
 .pastry-item {
     display: inline-block;
-    width: 30%;
+    width: 30%; /* This is adjusted for larger screens */
     margin: 20px;
     text-align: center;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
 }
 
 .pastry-item img {
     width: 70%;
     height: auto;
     border-radius: 8px;
+    margin-bottom: 15px;
     transition: transform 0.3s ease-in-out;
 }
 
@@ -150,6 +152,98 @@ nav ul li a:hover {
     cursor: pointer;
 }
 
+/* Order Section */
+.order-section {
+    background-color: #f0e1d6;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.order-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.order-section p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Guides Section */
+.guides {
+    text-align: center;
+    padding: 50px 20px;
+   
+}
+
+.guides h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.guides p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+.guide-items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.guide-item {
+    width: 30%;
+    margin: 20px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.guide-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease-in-out;
+
+} 
+
+.guide-item img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+   
+}
+
+.guide-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.guide-item a {
+    text-decoration: none;
+    color: #272626;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: background-color 0.3s;
+}
+
+.guide-item a {
+    background-color: #d68f60;
+   
+}
+
+@media (max-width: 768px) {
+    .guide-items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .guide-item {
+        width: 80%;
+    }
+}
 /* Order Section */
 .order-section {
     background-color: #f0e1d6;
